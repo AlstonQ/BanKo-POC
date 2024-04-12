@@ -347,8 +347,9 @@
                                 <form id="OnLineLeadForm" method="post" action="https://presales.businessbywire.com/sea2/ProcessAnonymous/OnlineLeadCapture?x=25xgkuqlsapsn67x4pygd2jkryy9symlutfc5knzy8tgtnnxgl8r8d5zwtv3enexc6ts6d6q7259grrxyl7c4te6yyz3tlhhpehg6sf642eqcdv3n3ma">
                                     <input type="hidden" name="debug" value="1"> <input type="hidden" name="debugEmail" value="james@crmnext.com"> <input type="hidden" name="SuccessReturnURL" value="http://www.google.com">
                                     <input type="hidden" name="FailureReturnURL" value="http://www.bing.com">
-                                    <label style="font-weight: 500">Let's Get Started</label><br><br>
-                                    
+                                    <label style="font-weight: 500" class="form-element__label" >Let's Get Started</label><br><br>
+                                    <label title="Product" class="form-element__label">Products </label>
+
                                     <select id="Product" name="Product" class="form-control" onchange="UpdateProductName();" style="font-weight: 700;margin-bottom: 20px;color: #999b9c; padding: inherit;">
                                         <option value="-1"> Select Product</option>
                                         <option value="1000130">Negosyoko Loan</option>
@@ -392,10 +393,16 @@
 
 
 
+                                        <label title="First Name" class="form-element__label">First Name</label>
+                                    <input type="text" id="FName" name="FName" required="required" placeholder="First Name" class="form-control">
+                                    <label title="Last Name" class="form-element__label">Last Name</label>
 
-                                    <input type="text" id="FName" name="FName" required="required" placeholder="First Name" class="form-control"><input type="text" id="LName" name="LName" required="required" placeholder="Last Name" class="form-control">
+                                    <input type="text" id="LName" name="LName" required="required" placeholder="Last Name" class="form-control">
                                         <!-- <input type="text" id="cust_1751" name="cust_1751"
                                         placeholder="Loan Amount" class="form-control"> -->
+
+
+                                        <label title="Mobile Number" class="form-element__label">Mobile Number</label>
                                         <input type="text" data-autoid="LE_PHONE" name="LE_PHONE" placeholder="Mobile Number" class="form-control">
                                         
                                         
@@ -433,7 +440,7 @@
                                         <option value="Self Employed">Self Employed</option>
                                     </select>
                                      -->
-
+                                     <label title="Company" class="form-element__label" data-autoid="Company">Company</label>
                                     <input type="text"data-autoid="Company" name="Company" class="form-control"
                                         style="font-weight: 700;margin-bottom: 20px;color: #999b9c; padding: inherit;">
                                     </input>
